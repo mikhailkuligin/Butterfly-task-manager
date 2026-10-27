@@ -5,12 +5,6 @@
 [![PWA](https://img.shields.io/badge/PWA-offline-5a0fc8)](https://web.dev/progressive-web-apps/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
-## About
-
-**Butterfly** is a calm school planner for girls: daily plans, exams, workouts, study topics and daily reflections in one place. It is built with **PHP 8.5** and **MySQL**, and ships as an installable, offline-friendly PWA.
-
-**Made by my daughter.**
-
 > **Проект сделала моя дочка.** Butterfly — её личный планер для учёбы: расписание, контрольные, тренировки и планы на день в одном спокойном приложении.
 
 Это PHP-версия приложения: серверная часть переписана на **PHP 8.5.12** и **MySQL**, фронтенд остался лёгким PWA без сборки и внешних зависимостей.
@@ -95,10 +89,6 @@ debug/DECISIONS.md   журнал решений по отладочным за�
 - изоляция данных по `user_id`, подготовленные SQL-запросы;
 - CSP без внешних CDN и трекеров, локальные шрифты и иконки;
 - экспорт содержит только данные пользователя, без паролей и токенов.
-
-## Author
-
-**The project was made by my daughter.** Butterfly was created as her personal study planner and grows with her goals and routines.
 
 ## Автор
 
