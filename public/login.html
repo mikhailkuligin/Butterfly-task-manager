@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Вход — Butterfly</title>
+<meta name="description" content="Butterfly — простой и безопасный планер для учёбы. Вход в личный кабинет.">
+<meta name="theme-color" content="#e6dfe3">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Butterfly">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="pilot.css">
+<script src="config.js"></script>
+</head>
+<body class="auth-page">
+<main class="auth-card" id="main">
+  <div class="auth-brand">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 9c-3-5-11-6-11 1 0 4 4 6 9 7-4 1-7 4-5 7 2 2 5 0 7-4 2 4 5 6 7 4 2-3-1-6-5-7 5-1 9-3 9-7 0-7-8-6-11-1z"/><path d="M16 9v15"/></svg>
+    <span class="brand-name">Butterfly</span>
+  </div>
+  <h1 class="auth-title" id="authTitle">Вход в Butterfly</h1>
+  <p class="auth-sub" id="authSub">Твой личный планер. Данные видит только ты.</p>
+
+  <div class="auth-error" id="authError" role="alert"></div>
+
+  <form class="auth-form" id="authForm" novalidate>
+    <label class="auth-field" for="loginInput">
+      <span>Логин</span>
+      <input class="in" id="loginInput" name="username" placeholder="Например, butterfly_17"
+             autocomplete="username" autocapitalize="none" spellcheck="false"
+             required minlength="3" maxlength="24" aria-describedby="loginHint">
+    </label>
+    <p class="muted-sm" id="loginHint" style="margin:-4px 0 0">3–24 символа: буквы, цифры, _ . -</p>
+
+    <label class="auth-field" for="passInput">
+      <span>Пароль</span>
+      <span class="pass-row">
+        <input class="in" id="passInput" name="password" type="password"
+               autocomplete="current-password" placeholder="Введи пароль" required maxlength="128">
+        <button class="pass-toggle" type="button" id="passToggle" aria-label="Показать пароль" aria-pressed="false">Показ</button>
+      </span>
+    </label>
+
+    <label class="remember" id="rememberRow">
+      <input type="checkbox" id="rememberInput" checked>
+      Запомнить меня навсегда
+    </label>
+    <p class="muted-sm" style="margin:-2px 0 0">Только для личного устройства: сессия хранится до выхода.</p>
+
+    <button class="btn auth-submit" type="submit" id="submitBtn">Войти</button>
+  </form>
+
+  <div class="auth-offline-note" id="offlineNote">Нет сети — проверь подключение и попробуй ещё раз.</div>
+
+  <div class="auth-links">
+    <a href="/install.html">Как установить на телефон</a>
+    <a href="/login.html?help=1" id="helpLink" hidden>Забыли пароль?</a>
+  </div>
+
+  <p class="auth-hint">Регистрация закрыта: аккаунт создаёт администратор. Мы не собираем почту, телефон и не ставим трекеры. Если забыл пароль — попроси помочь того, кто запускал пилот.</p>
+</main>
+<script src="login.js"></script>
+</body>
+</html>

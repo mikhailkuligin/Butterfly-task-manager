@@ -1,0 +1,41 @@
+name: Feature request
+description: Предложить улучшение Butterfly PHP
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Опишите задачу и пользу, а не только реализацию.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Проблема
+      description: Что сейчас неудобно или чего не хватает.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Предлагаемое решение
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Альтернативы
+    validations:
+      required: false
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Область
+      options:
+        - UI/UX
+        - API
+        - Безопасность
+        - PWA/офлайн
+        - Документация
+        - Другое
+    validations:
+      required: true

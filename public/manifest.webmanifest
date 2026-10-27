@@ -1,0 +1,20 @@
+{
+  "name": "Butterfly — учебный планер",
+  "short_name": "Butterfly",
+  "description": "Простой и безопасный планер для учёбы: расписание, контрольные, тренировки и таймер концентрации.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#e6dfe3",
+  "theme_color": "#e6dfe3",
+  "lang": "ru",
+  "dir": "ltr",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

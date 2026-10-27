@@ -1,0 +1,10 @@
+.env
+php-server.log
+audit/downloads/
+*.log
+.secrets/
+tests/_*
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
